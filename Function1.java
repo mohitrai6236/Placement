@@ -2,30 +2,47 @@ import java.util.Scanner;
 
 public class Function1 {
 
-// @Wap for number is odd or even
 
-    public static boolean isEven(int n){
-        // for(int i=0;i<=n;i++)
-            if(n%2==0){
-                return true;
-            }
-           
+    public static void multiply(int n){
+        for(int i=1;i<=10;i++)
+        System.out.println(n+"*"+i+"="+n*i);
+
         
-         return false;
     }
 
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         int n=sc.nextInt();
 
-        if(isEven(n)){
-            System.out.println("even");
-
-        }else{
-            System.out.println("odd");
-        }
-        isEven(n);
+        multiply(n);
     }
+
+
+
+// @Wap for number is odd or even
+
+    // public static boolean isEven(int n){
+    //     // for(int i=0;i<=n;i++)
+    //         if(n%2==0){
+    //             return true;
+    //         }
+           
+        
+    //      return false;
+    // }
+
+    // public static void main(String args[]){
+    //     Scanner sc=new Scanner(System.in);
+    //     int n=sc.nextInt();
+
+    //     if(isEven(n)){
+    //         System.out.println("even");
+
+    //     }else{
+    //         System.out.println("odd");
+    //     }
+       
+    // }
 
 
 
@@ -51,7 +68,7 @@ public class Function1 {
     //     else{
     //         System.out.println("not prime");
     //     }
-    //     isPrime(n);
+       
     // }
 }
 
