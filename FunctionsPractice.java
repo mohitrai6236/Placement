@@ -4,34 +4,51 @@ import java.util.*;
 
 public class FunctionsPractice {
 
+    public static int power(int x,int n){
 
-
-//@5 Wap using function to print eligibility for voting
-
-    public static boolean voteAge(int n){
-            if(n>=18){
-                return true;
-            }
-            return false;
-
+       int result=1;
+       for(int i=1;i<=n;i++){
+        result=result*x;
+       }
+       return result;
     }
 
     public static void main(String args[]){
-        Scanner sc= new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        int x=sc.nextInt();
 
-        if(voteAge(n)){
-            System.out.println("can vote");
-        } else{
-            System.out.println("cannot vote");
-        }
-
+        System.out.println(power(x, n));
     }
+ 
+
+// _____________________________________________________________________
+// //@5 Wap using function to print eligibility for voting
+
+//     public static boolean voteAge(int n){
+//             if(n>=18){
+//                 return true;
+//             }
+//             return false;
+
+//     }
+
+//     public static void main(String args[]){
+//         Scanner sc= new Scanner(System.in);
+//         int n=sc.nextInt();
+
+//         if(voteAge(n)){
+//             System.out.println("can vote");
+//         } else{
+//             System.out.println("cannot vote");
+//         }
+
+//     }
 
 
 
 
-
+//__________________________________________________________________________
 // @4 Wap to print circumference of the circle using radius
 
     // public static double circumference(double r){
@@ -96,6 +113,7 @@ public class FunctionsPractice {
 //         oddNumbers(n);
 //     }
 
+//_______________________________________________________________________________________________
     //@1 Wap to print average of three numbers using functions
 
         //  public static int average(int a,int b,int c){
