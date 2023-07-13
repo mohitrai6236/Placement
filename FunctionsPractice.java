@@ -4,25 +4,47 @@ import java.util.*;
 
 public class FunctionsPractice {
 
-    public static int greater(int a,int b){
 
+// @4 Wap to print circumference of the circle using radius
 
-        if(a>b){
-            return a;
-        }else{
-            return b;
-        }
-        
+    public static double circumference(double r){
+
+    
+        return (2*3.14*r);
     }
 
     public static void main(String args[]){
 
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
+        double r=sc.nextInt();
 
-        System.out.println(greater(a, b));
+
+        System.out.println(circumference(r));
     }
+
+
+
+    // @3 Wap to find out greater using function
+
+    // public static int greater(int a,int b){
+
+
+    //     if(a>b){
+    //         return a;
+    //     }else{
+    //         return b;
+    //     }
+        
+    // }
+
+    // public static void main(String args[]){
+
+    //     Scanner sc=new Scanner(System.in);
+    //     int a=sc.nextInt();
+    //     int b=sc.nextInt();
+
+    //     System.out.println(greater(a, b));
+    // }
 
 // __________________________________________________________________
 // // @2 Wap to print sum odd numbers
