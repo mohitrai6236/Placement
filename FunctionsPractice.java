@@ -4,27 +4,48 @@ import java.util.*;
 
 public class FunctionsPractice {
 
-// @2 Wap to print sum odd numbers
+    public static int greater(int a,int b){
 
-    public static void oddNumbers(int n){
 
-       int sum=0;
-       for(int i=1;i<=n;i++){
-        if(i%2!=0){
-            sum=sum+i;
+        if(a>b){
+            return a;
+        }else{
+            return b;
         }
-       }
-       System.out.println(sum);
+        
     }
 
     public static void main(String args[]){
 
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
 
-
-        oddNumbers(n);
+        System.out.println(greater(a, b));
     }
+
+// __________________________________________________________________
+// // @2 Wap to print sum odd numbers
+
+//     public static void oddNumbers(int n){
+
+//        int sum=0;
+//        for(int i=1;i<=n;i++){
+//         if(i%2!=0){
+//             sum=sum+i;
+//         }
+//        }
+//        System.out.println(sum);
+//     }
+
+//     public static void main(String args[]){
+
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+
+
+//         oddNumbers(n);
+//     }
 
     //@1 Wap to print average of three numbers using functions
 
