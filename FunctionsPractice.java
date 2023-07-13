@@ -5,22 +5,49 @@ import java.util.*;
 public class FunctionsPractice {
 
 
-// @4 Wap to print circumference of the circle using radius
 
-    public static double circumference(double r){
+//@5 Wap using function to print eligibility for voting
 
-    
-        return (2*3.14*r);
+    public static boolean voteAge(int n){
+            if(n>=18){
+                return true;
+            }
+            return false;
+
     }
 
     public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
 
-        Scanner sc=new Scanner(System.in);
-        double r=sc.nextInt();
+        if(voteAge(n)){
+            System.out.println("can vote");
+        } else{
+            System.out.println("cannot vote");
+        }
 
-
-        System.out.println(circumference(r));
     }
+
+
+
+
+
+// @4 Wap to print circumference of the circle using radius
+
+    // public static double circumference(double r){
+
+    
+    //     return (2*3.14*r);
+    // }
+
+    // public static void main(String args[]){
+
+    //     Scanner sc=new Scanner(System.in);
+    //     double r=sc.nextInt();
+
+
+    //     System.out.println(circumference(r));
+    // }
 
 
 
