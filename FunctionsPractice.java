@@ -4,22 +4,52 @@ import java.util.*;
 
 public class FunctionsPractice {
 
-    public static int power(int x,int n){
 
-       int result=1;
-       for(int i=1;i<=n;i++){
-        result=result*x;
-       }
-       return result;
+
+    
+
+public static int Gcd(int n1, int n2){
+
+    while(n1!=n2){
+        if(n1>n2){
+            return (n1=n1-n2);
+        
+           }else{   return (n2=n2-n1);
+           }
+      
     }
+    return n2;
 
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int x=sc.nextInt();
+}
 
-        System.out.println(power(x, n));
-    }
+public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int n1=sc.nextInt();
+    int n2=sc.nextInt();
+
+     System.out.println(Gcd(n1,n2));
+}
+
+
+    // @6 Wap to print the power of the number x,n answer
+
+
+    // public static int power(int x,int n){
+
+    //    int result=1;
+    //    for(int i=1;i<=n;i++){
+    //     result=result*x;
+    //    }
+    //    return result;
+    // }
+
+    // public static void main(String args[]){
+    //     Scanner sc=new Scanner(System.in);
+    //     int n=sc.nextInt();
+    //     int x=sc.nextInt();
+
+    //     System.out.println(power(x, n));
+    // }
  
 
 // _____________________________________________________________________
