@@ -2,19 +2,46 @@ import java.util.*;
 public class Arrays {
     public static void main(String args[]){
 
-        Scanner sc = new Scanner (System.in);
+        // @2 Wap to search a number in a array (Linear search)
+
+        Scanner sc =new Scanner(System.in);
         int size = sc.nextInt();
-        int number[] = new int [size];
+        int numbers[] = new int[size];
+
         //input
         for(int i=0;i<size;i++){
-            number[i]=sc.nextInt();
+            numbers[i] = sc.nextInt();
         }
+        int x= sc.nextInt();
 
         //output
-        for(int i=0;i<size;i++){
-            System.out.println(number[i]);
+        for(int i=0;i<numbers.length;i++){       //numbers.length=size both are equal same
+
+            if(numbers[i]==x){
+                System.out.println("x found at index: " + i);
+
+            }
         }
 
+
+
+
+
+
+        // @1 Wap to print marks using array
+        // Scanner sc = new Scanner (System.in);
+        // int size = sc.nextInt();
+        // int number[] = new int [size];
+        // //input
+        // for(int i=0;i<size;i++){
+        //     number[i]=sc.nextInt();
+        // }
+
+        // //output
+        // for(int i=0;i<size;i++){
+        //     System.out.println(number[i]);
+        // }
+// ________________________________________________________________________
 
         // int[] marks=new int[3];
         // int marks[]= new int[3];
