@@ -5,5 +5,10 @@ public class StringsB {
 
         //find the charater at index 0
         System.out.println(sb.charAt(0));// 0 define what letter is that position
+
+        //set char at index 0
+
+        sb.setCharAt(0, 'P');
+        System.out.println(sb);
     }
 }
