@@ -6,7 +6,8 @@ sb.append("e");
 sb.append("l");
 sb.append("l");
 sb.append("0");
-System.out.println(sb);
+//System.out.println(sb); >> this is to print the char
+System.out.println(sb.length());
         // @5 append the char means add char at the end of the word
 
 
