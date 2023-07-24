@@ -10,11 +10,18 @@ public class StringsB {
 
 //         sb.setCharAt(0, 'P');// it will replace the letters
 //         System.out.println(sb);
-      
-            
+   //____________________________________________________________________________________________________________________________
+
+   // @3 insert at the given place         
            sb.insert(2,'n');
             
             //sb.insert(0, 'S');
             System.out.println(sb);// it is used to insert the char
+// _______________________________________________________________________________________________________________
+            // @4 delete the extrea n
+
+            sb.delete(2, 3);
+            System.out.println(sb);
+
     }
 }
