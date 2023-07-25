@@ -1,13 +1,28 @@
 public class StringsB {
     public static void main(String args[]){
-        StringBuilder sb = new StringBuilder("Tony");
+        StringBuilder sb = new StringBuilder("hello");
+
+        for(int i=0;i<sb.length()/2;i++){
+            int front = i;
+            int back =sb.length() -1 - i;
+
+            char frontChar = sb.charAt(front);
+            char backChar = sb.charAt(back);
+
+            sb.setCharAt(front, backChar);
+            sb.setCharAt(back, frontChar);
+        }
+
+System.out.println(sb);
+
+
         // for 1,2,3,4 only System.out.println(sb);
-sb.append("e");
-sb.append("l");
-sb.append("l");
-sb.append("0");
-//System.out.println(sb); >> this is to print the char
-System.out.println(sb.length());
+// sb.append("e");
+// sb.append("l");
+// sb.append("l");
+// sb.append("0");
+// //System.out.println(sb); >> this is to print the char
+// System.out.println(sb.length());
         // @5 append the char means add char at the end of the word
 
 
