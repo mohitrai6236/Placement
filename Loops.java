@@ -32,7 +32,7 @@ public class Loops {
             sum=sum+i;
         }
         System.out.println(sum);
-        */
+        
 
         //wap to print table of any number
 
@@ -42,5 +42,46 @@ public class Loops {
         for(int i=1;i<11;i++){
             System.out.println(n*i);
         }
+
+        
+
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+
+       
+        for(int i=1;i<=n;i++){
+           if(i%2==0){
+            System.out.println(i);
+           }
+
+           
+        }
+       
+
+       for(; ;) {
+            System.out.println("Apna College");
+        }
+
+    */
+
+    Scanner sc=new Scanner(System.in);
+    
+   int input;
+   do{
+
+    int n=sc.nextInt();
+    if(n>=90){
+        System.out.println("this is good");
+    }else if(n>=60 && n<=89){
+        System.out.println("tjis is also good");
     }
+    else{
+        System.out.println("marks doesnt matter");
+    }
+
+    System.out.println("press 0 or 1");
+    input=sc.nextInt();
+    
+}while(input==1);
+}
 }
