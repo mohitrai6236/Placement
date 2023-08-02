@@ -5,30 +5,41 @@ import java.util.*;
 public class FunctionsPractice {
 
 
+    public static void fibonacci(int a,int b){
+
+
+    }
+
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+    }
 
     
+// @7 Wap to print Gcd with function
 
-public static int Gcd(int n1, int n2){
+// public static int Gcd(int n1, int n2){
 
-    while(n1!=n2){
-        if(n1>n2){
-            return (n1=n1-n2);
+//     while(n1!=n2){
+//         if(n1>n2){
+//             return (n1=n1-n2);
         
-           }else{   return (n2=n2-n1);
-           }
+//            }else{   return (n2=n2-n1);
+//            }
       
-    }
-    return n2;
+//     }
+//     return n2;
 
-}
+// }
 
-public static void main(String args[]){
-    Scanner sc = new Scanner(System.in);
-    int n1=sc.nextInt();
-    int n2=sc.nextInt();
+// public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n1=sc.nextInt();
+//     int n2=sc.nextInt();
 
-     System.out.println(Gcd(n1,n2));
-}
+//      System.out.println(Gcd(n1,n2));
+// }
 
 
     // @6 Wap to print the power of the number x,n answer
