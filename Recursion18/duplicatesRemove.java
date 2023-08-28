@@ -9,7 +9,7 @@ public class duplicatesRemove {
             return;
         }
 
-        char currChar = str.charAt(idx);
+        char currChar = str.charAt(idx);// current char is at
         if(map[currChar - 'a']) {
             removeDuplicates(str,idx+1, newString);
         } else{
