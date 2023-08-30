@@ -1,8 +1,8 @@
 package Recursion18;
-
+// very important
 public class subSeq {
     // WAP to print all the subsequences of a string
-    public static void subsequences(String str, int idx, String newString){
+    public static void subsequences(String str, int idx, String newString){ // subsequence is the name of function
         if(idx == str.length()){
             System.out.println(newString);
             return;
@@ -21,3 +21,12 @@ public class subSeq {
         subsequences(str, 0, "");
     }
 }
+ // output
+// abc
+// ab
+// ac
+// a
+// bc
+// b
+// c
+
