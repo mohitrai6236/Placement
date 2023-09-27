@@ -5,7 +5,7 @@ abstract class Animal {
 
 class Horse extends Animal {
     public void walk() {
-        System.out.println("walks on 4 legs");
+        System.out.println("walks on +4 legs");
     }
 }
 
