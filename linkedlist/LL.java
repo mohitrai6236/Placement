@@ -9,6 +9,12 @@ public class LL {
         list.addFirst("a");
         list.addFirst("is");
         System.out.println(list);
+
+        list.addFirst("this");
+        list.addLast("list");
+        System.out.println(list);
+
+        System.out.println(list.size());
     }
     
 }
