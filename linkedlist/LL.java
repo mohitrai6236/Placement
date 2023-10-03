@@ -15,6 +15,12 @@ public class LL {
         System.out.println(list);
 
         System.out.println(list.size());
+
+        for(int i=0; i<list.size(); i++){
+            // we use .get when we need element
+            System.out.print(list.get(i)+" -> ");
+        }
+        System.out.println("null");
     }
     
 }
