@@ -21,6 +21,15 @@ public class LL {
             System.out.print(list.get(i)+" -> ");
         }
         System.out.println("null");
+
+        // list.removeFirst();
+        // System.out.println(list);
+
+        // list.removeLast();
+        // System.out.println(list);
+
+        list.remove(3);
+        System.out.println(list);
     }
     
 }
