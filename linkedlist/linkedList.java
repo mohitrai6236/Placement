@@ -98,24 +98,55 @@ public class linkedList {
     public int getSize(){
         return size;
     }
+
+    public void reverseIterate(){
+        if(head == null || head.next == null){
+            return;
+        }
+        
+        Node prevNode = head;
+        Node currNode = head.next;
+        while(currNode !=null){
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            //update
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+        head.next = null;
+        head = prevNode;
+
+    }
+
+
     public static void main(String[] args) {
         linkedList list = new linkedList();
-        list.addFirst("a");
-        list.addFirst("is");
-        list.printList();
+        // list.addFirst("a");
+        // list.addFirst("is");
+        // list.printList();
 
-        list.addLast("list");
-        list.printList();
+        // list.addLast("list");
+        // list.printList();
 
-        list.addFirst("this");
-        list.printList();
+        // list.addFirst("this");
+        // list.printList();
         
-        list.deleteFirst();
-        list.printList();
+        // list.deleteFirst();
+        // list.printList();
         
-        list.deleteLast();
+        // list.deleteLast();
+        // list.printList();
+
+        list.addLast("1");
+        list.addLast("2");
+        list.addLast("3");
+        list.addLast("4");
+        list.addLast("5");
+        
+        list.reverseIterate();
         list.printList();
 
-        System.out.println(list.getSize());
+        // System.out.println(list.getSize());
     }
 }
