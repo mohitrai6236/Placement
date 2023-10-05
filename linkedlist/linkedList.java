@@ -119,6 +119,19 @@ public class linkedList {
 
     }
 
+    public Node reverseRecursive(Node head) {
+
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        Node newHead = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+
 
     public static void main(String[] args) {
         linkedList list = new linkedList();
@@ -144,7 +157,10 @@ public class linkedList {
         list.addLast("4");
         list.addLast("5");
         
-        list.reverseIterate();
+        // list.reverseIterate();
+        // list.printList();
+
+        list.head = list.reverseRecursive(list.Node);
         list.printList();
 
         // System.out.println(list.getSize());
