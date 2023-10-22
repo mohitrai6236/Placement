@@ -30,3 +30,4 @@ public class newanimals {
         Horse horse = new Horse();
     }
 }
+
