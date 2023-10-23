@@ -1,5 +1,5 @@
 package backtracking;
 
-public class List<T> {
+public class List<T> { 
 
 }
